@@ -4,14 +4,14 @@
 }
 
 body {
-	background: #222;
+	background: #f5fffa;
 	font-family: Georgia, serif;
 	color: #fff;
 	font-size: 14px;
 }
 
 a {
-	color: #ffffcc;
+	color: #d2b48c;
 	text-decoration: none;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -21,8 +21,20 @@ a {
 }
 	a:hover,
 	a.selected {
-		color: #ffcc00;
+		color: #8b4513;
 	}
+
+p::first-letter{
+	font-size: 4em;
+	font-weight: bold;
+	margin-right: 8px;
+}
+
+p{
+	color:black;
+	font-size: 16px;
+	font-weight: bold;
+}
 
 h1,h2,h4,h5,h6 {
 	text-align: center;
@@ -82,7 +94,6 @@ h1,h2,h4,h5,h6 {
 				width: 400px;
 				height: 600px;
 				list-style: none;
-
 			}
 				#issues li.selected img {
 					-webkit-transform: scale(1.1,1.1);
@@ -93,7 +104,7 @@ h1,h2,h4,h5,h6 {
 				}
 				#issues li img {
 					float: left;
-					margin: 10px 30px 10px 50px;
+					margin: 30px 30px 10px 150px;
 					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
 					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
 					zoom: 1;
@@ -107,19 +118,20 @@ h1,h2,h4,h5,h6 {
 				    -o-transform: scale(0.7,0.7);
 				    -ms-transform: scale(0.7,0.7);
 				    transform: scale(0.7,0.7);
+
 				}
 				#issues li h1 {
-					color: #ffcc00;
+					color: #8b4513;
 					font-size: 48px;
 					text-align: center;
-					text-shadow: #000 1px 1px 2px;
 				}
 				#issues li p {
-					font-size: 14px;
-					margin: 10px 20px;
-					font-weight: normal;
-					line-height: 22px;
-					text-shadow: #000 1px 1px 2px;
+					color: #000000;
+					font-size: 20px;
+					margin: 150px 0px;
+					font-weight:bold;
+					line-height: 30px;
+					text-align: center;
 				}
 		
 		#grad_top,
