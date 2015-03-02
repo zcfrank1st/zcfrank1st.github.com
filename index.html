@@ -1,94 +1,83 @@
 <!doctype html>
+<html lang="en" class="no-js">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Resume_Timeline</title>
-	<link rel="stylesheet" href="css/style_v.css" media="screen" />
-	
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery.timelinr-0.9.53.js"></script>
-	<script>
-		$(function(){
-			$().timelinr({
-				orientation: 	'vertical',
-				issuesSpeed: 	300,
-				datesSpeed: 	100,
-				arrowKeys: 		'true',
-				startAt:		1
-			})
-		});
-	</script>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>chao</title>
 </head>
-
 <body>
-	<!-- 个人简介 -->
-	<div>
-		<a href="https://github.com/zcfrank1st"><img src="images/me.png"></a>
-		<p>Name:张超<p>
-		<p>Nick Name: zcfrank1st</p>
-		<p>Programming Skills: Java Ruby Python Shell etc.</p>
+	<header>
+		<a href="https://github.com/zcfrank1st"><img src="img/me.png" title="click me"></a>
+	</header>
 
-	</div>
-	
-	<div id="timeline">
-		<ul id="dates">
-			<li><a href="#2004" class="selected">2004</a></li>
-			<li><a href="#2007">2007</a></li>
-			<li><a href="#2011">2011</a></li>
-			<li><a href="#2011">2012</a></li>
-			<li><a href="#2013">2013</a></li>
-			<li><a href="#other">其他</a></li>
-		</ul>
-		<ul id="issues">
-			<li id="2004" class="selected">
-				<h1>2004</h1>
-				<img src="images/1.png" width="100" height="100" />
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>简介</h2>
+				<p>本人名叫张超。本科毕业于南京林业大学，硕士毕业于东南大学。目前程序猿一枚。</p>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>实习</h2>
+				<p>在南京烽火星空公司公共研发部实习，主要实习内容Hadoop，Hbase和Zookeeper相关大数据开发，实习时间8个月。</p>
+				<span class="cd-date">2012-07至2013-03</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>工作经历</h2>
+				<p>在点评数据平台工作，熟悉平台的运作</p>
+				<span class="cd-date">2013-09至今</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>其他</h2>
 				<p>
-					2004年9月进入南京师范大学附属中学高中部学习，高中。
-				</p>
-			</li>
-			<li id="2007">
-				<h1>2007</h1>
-				<img src="images/2.png" width="100" height="100" />
-				<p>
-					2007年9月进入南京林业大学学习，学院：经济管理学院，专业：信息管理与信息系统，本科。
-				</p>
-			</li>
-			<li id="2011">
-				<h1>2011</h1>
-				<img src="images/3.png" width="100" height="100" />
-				<p>
-					2011年9月进入东南大学学习，学院：软件学院，专业：软件工程，硕士。
-				</p>
-			</li>
-			<li id="2012">
-				<h1>2012</h1>
-				<img src="images/4.png" width="100" height="50" />
-				<p>
-					2012年7月进入南京烽火星空公司公共研发部实习，主要实习内容Hadoop，Hbase和Zookeeper相关大数据开发，实习时间8个月。
-				</p>
-			</li>
-			<li id="2013">
-				<h1>2013</h1>
-				<img src="images/5.png" width="100" height="100" />
-				<p>
-					2013年4月应聘点评并获得offer，硕士毕业后入职。
-				</p>
-			</li>
-			<li id="other">
-				<h1>其他</h1>
-				<img src="images/6.png" width="100" height="50" />
-				<p>
-					2013年8月参加阿里云大赛，参赛作品：git@github.com: zcfrank1st/OSSToolkit.git
+					2013年8月：参加阿里云大赛，参赛项目：git@github.com: zcfrank1st/OSSToolkit.git
 					<br>
-					项目经历：<br>
-					2012.8至2013.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海量分布式存储，对hadoop、hbase和zookeeper进行二次开发实现大数据入库及检索。
+					2014年10月：参加七牛云存储开发比赛，参赛项目：git@github.com:zcfrank1st/QnDemo.git，项目类似百度云但是是简化版的，获得四等奖
+					<br>
+					2014年12月：参加ping++开发比赛，参赛项目：git@github.com:zcfrank1st/chaos-pingapp-scala.git，项目为用scala语言将原先的java sdk重写，获得优秀奖
 				</p>
-			</li>
-		</ul>
-		<a href="#" id="next">+</a>
-		<a href="#" id="prev">-</a>
-	</div>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>简历</h2>
+				<p></p>
+				<a href="#0" class="cd-read-more">下载</a>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
