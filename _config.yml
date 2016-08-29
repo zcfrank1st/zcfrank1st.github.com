@@ -22,9 +22,6 @@ url: "http://zcfrank1st.github.io" # the base hostname & protocol for your site
 twitter_username: zcfrank1st
 github_username:  zcfrank1st
 
-site.description: 关于编码和生活的一些事
-site.title: Coding && Life
-
 # Build settings
 markdown: kramdown
 theme: minima
