@@ -25,5 +25,3 @@ github_username:  zcfrank1st
 # Build settings
 markdown: kramdown
 theme: minima
-
-disqus_shortname: Chao Zhang
