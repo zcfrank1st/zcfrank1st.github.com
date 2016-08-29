@@ -1,93 +1,23 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>chao</title>
-</head>
-<body>
-	<header>
-		<a href="https://github.com/zcfrank1st"><img src="img/me.png" title="click me"></a>
-	</header>
+---
+layout: default
+---
 
-	<section id="cd-timeline" class="cd-container">
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
+<div class="home">
 
-			<div class="cd-timeline-content">
-				<h2>简介</h2>
-				<p>本人名叫张超。本科毕业于南京林业大学，硕士毕业于东南大学。目前程序猿一枚。</p>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+  <h1 class="page-heading">Posts</h1>
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-			<div class="cd-timeline-content">
-				<h2>实习</h2>
-				<p>在南京烽火星空公司公共研发部实习，主要实习内容Hadoop，Hbase和Zookeeper相关大数据开发，实习时间8个月。</p>
-				<span class="cd-date">2012-07至2013-03</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-			<div class="cd-timeline-content">
-				<h2>工作经历</h2>
-				<p>在大众点评数据平台工作，熟悉平台的运作，主要工作内容为平台产品工具的开发</p>
-				<span class="cd-date">2013-09至今</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>其他</h2>
-				<p>
-					2013年8月：参加阿里云大赛，参赛项目：git@github.com: zcfrank1st/OSSToolkit.git
-					<br>
-					2014年10月：业余时间参加七牛云存储开发比赛，参赛项目：git@github.com:zcfrank1st/QnDemo.git，项目类似百度云但是是简化版的，获得四等奖
-					<br>
-					2014年12月：业余时间参加ping++开发比赛，参赛项目：git@github.com:zcfrank1st/chaos-pingapp-scala.git，项目为用scala语言将原先的java sdk重写，获得优秀奖
-				</p>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>简历</h2>
-				<p></p>
-				<a href="http://pan.baidu.com/s/1mgn9qRY" class="cd-read-more">下载</a>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img  cd-picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>联系我</h2>
-				<p></p>
-				<a href=mailto:zhchaos@gmail.com>zhchaos#gmail.com</a>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-	</section> <!-- cd-timeline -->
-<script src="js/jquery.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
-</html>
+</div>
