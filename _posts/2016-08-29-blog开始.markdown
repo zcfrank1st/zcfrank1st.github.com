@@ -1,7 +1,0 @@
----
-layout: post
-title:  "准备开始没事写点东西"
-date:   2016-08-29 09:48:56 +0800
-categories: jekyll update
----
-RT
