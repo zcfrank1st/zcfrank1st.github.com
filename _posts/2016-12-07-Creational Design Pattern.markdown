@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Creational Design Pattern"
+date:   2016-12-07 20:32:56 +0800
+categories: jekyll update
+---
 ### Creational Design Pattern
 
 最近code了点东西，等整理好再写。
