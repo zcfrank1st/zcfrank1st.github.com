@@ -93,7 +93,7 @@ categories: jekyll update
         
 * **Builder Pattern**
 
->The intent of the Builder Pattern is to separate the construction of a complex object from its representation, so that the same constriction process can create different representations. This type of separation reduces the object size.The design turns out to be more modular with each implementation contained in a different builder object. Adding a new implementation becomes easier. The object construction process becomes independent of the component that make up the object.This provides mode control over the object construction process.
+    >The intent of the Builder Pattern is to separate the construction of a complex object from its representation, so that the same constriction process can create different representations. This type of separation reduces the object size.The design turns out to be more modular with each implementation contained in a different builder object. Adding a new implementation becomes easier. The object construction process becomes independent of the component that make up the object.This provides mode control over the object construction process.
 
 **when to use:**
         
