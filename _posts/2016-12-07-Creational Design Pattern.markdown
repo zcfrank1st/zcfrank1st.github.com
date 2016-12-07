@@ -20,6 +20,7 @@ categories: jekyll update
     
     
 * **Factory Pattern**
+
     >Factory pattern provides approach to code for interface rather than implementation.
     Factory pattern removes the instantiation of actual implementation classes from client code, making it more robust, less coupled and easy to extend.
     Factory pattern provides abstraction between implementation and client classes though inheritance.
